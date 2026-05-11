@@ -1,6 +1,8 @@
 // File: src/CollectionsFramework/Stack/StackDemo.java
 package CollectionsFramework.Stack;
 
+import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.Stack;
 
 public class StackDemo {
@@ -38,5 +40,25 @@ public class StackDemo {
             System.out.println("Removing: " + stack.pop());
         }
         System.out.println("Stack after removing all elements: " + stack);
+
+        // LinkedList as stack
+        LinkedList<Integer> linkedList = new LinkedList<>();
+        linkedList.add(1);// same as push in the stack
+        linkedList.add(2);// same as push in the stack
+        linkedList.add(3);// same as push in the stack
+        linkedList.addLast(2); // same as pop in the stack
+        linkedList.addFirst(0); // same as peek in the stack
+        linkedList.getLast(); // same as peek in the stack
+        linkedList.removeLast(); // same as pop in the stack
+
+
+        // Arraylist as Stack
+
+        ArrayList<Integer> arrayList = new ArrayList<>();
+        arrayList.add(1); // same as push in the stack
+        arrayList.add(2); // same as push in the stack
+        arrayList.add(3); // same as push in the stack
+        arrayList.get(arrayList.size() - 1); // same as peek in the stack
+        arrayList.remove(arrayList.size() -1 ); // same as pop in the stack
     }
 }
