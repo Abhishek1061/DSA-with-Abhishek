@@ -1,8 +1,6 @@
 package CollectionsFramework.Map.HashMap;
 
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
 
 public class HashMapDemo {
     public static void main(String[] args) {
@@ -36,5 +34,8 @@ public class HashMapDemo {
         for(Map.Entry<Integer,String> entry : entries){
             System.out.println(entry.getValue().toUpperCase());
         }
+
+        List<Integer> list = Arrays.asList(2, 4, 32, 43, 4, 432);
+        list.contains(32);
     }
 }
