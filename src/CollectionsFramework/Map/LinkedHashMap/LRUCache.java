@@ -45,5 +45,6 @@ public class LRUCache<K, V> extends LinkedHashMap<K, V> {
 
         // Printing final cache
         System.out.println(studentMap);
+
     }
 }
